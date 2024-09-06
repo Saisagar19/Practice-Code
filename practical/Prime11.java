@@ -1,0 +1,25 @@
+package practical;
+
+public class Prime11 {
+
+	
+	public void PrimeMethod(int first,int sec)
+	{
+		for(int i=first;i<=sec;i++)
+		{
+			int count=0;
+			for(int j=1;j<=i;j++)
+			{
+				if(i%j==0)
+				{
+					count++;
+				}
+			}
+			if(count==2)
+			{
+				System.out.println(i);
+			}
+		}
+		
+	}
+}
